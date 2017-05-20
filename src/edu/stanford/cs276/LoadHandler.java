@@ -1,5 +1,7 @@
 package edu.stanford.cs276;
 
+import edu.stanford.cs276.util.Stemmer;
+
 import java.io.*;
 import java.util.*;
 
@@ -51,6 +53,7 @@ public class LoadHandler {
           queryDict.get(query).get(url).body_hits = new HashMap<String, List<Integer>>();
         String[] temp = value.split(" ", 2);
         String term = temp[0].trim();
+        term = getStem(term);
         List<Integer> positions_int;
 
         if (!queryDict.get(query).get(url).body_hits.containsKey(term)) {
@@ -78,6 +81,13 @@ public class LoadHandler {
     reader.close();
 
     return queryDict;
+  }
+
+  private static String getStem(String word) {
+    Stemmer stemmer = new Stemmer();
+    stemmer.add(word.toCharArray(), word.length());
+    stemmer.stem();
+    return stemmer.toString();
   }
 
   /**
@@ -185,6 +195,7 @@ public class LoadHandler {
         }
         IDF.put(term, idf_value);
       }
+      IDF.put("@@@", (double)Math.log(totalDocCount+1d));
 
       // Save to file
       try {

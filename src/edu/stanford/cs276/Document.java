@@ -1,5 +1,7 @@
 package edu.stanford.cs276;
 
+import edu.stanford.cs276.util.Stemmer;
+
 import java.util.*;
 
 /**
@@ -70,6 +72,7 @@ public class Document {
     }
     // Split all non alphabeta chars.
     for(String word: url.toLowerCase().split("\\W+")) {
+      word = getStem(word);
       if(term.equals(word)) result += 1.0;
     }
     return result;
@@ -81,6 +84,7 @@ public class Document {
       return result;
     }
     for(String word: title.toLowerCase().split("\\s+")) {
+      word = getStem(word);
       if(term.equals(word)) result += 1.0;
     }
     return result;
@@ -93,6 +97,7 @@ public class Document {
     }
     for(String header : headers) {
       for(String word: header.toLowerCase().split("\\s+")) {
+        word = getStem(word);
         if(term.equals(word)) result += 1.0;
       }
     }
@@ -106,6 +111,7 @@ public class Document {
 
     for(Map.Entry<String, Integer> entry : anchors.entrySet()) {
       for(String wordInAnchor: entry.getKey().toLowerCase().split("\\s+")) {
+        wordInAnchor = getStem(wordInAnchor);
         if(result.containsKey(wordInAnchor)) {
           Double ct = result.get(wordInAnchor) + entry.getValue();
           result.put(wordInAnchor, ct);
@@ -127,6 +133,12 @@ public class Document {
     return result;
   }
 
+  private String getStem(String word) {
+    Stemmer stemmer = new Stemmer();
+    stemmer.add(word.toCharArray(), word.length());
+    stemmer.stem();
+    return stemmer.toString();
+  }
 
   /**
    * Returns a String representation of a Document.

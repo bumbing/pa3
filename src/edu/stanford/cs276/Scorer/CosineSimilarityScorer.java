@@ -49,33 +49,21 @@ public class CosineSimilarityScorer extends AScorer {
     Map<String, Double> termInQuery = q.termCount();
 
     for(Map.Entry<String, Double> map: termInQuery.entrySet()) {
-      //double qv_q = tfQuery.get(map.getKey()) * sublinear(map.getValue());
-      //System.out.println("qv_q is " + tfQuery.get(map.getKey()) + " * " + sublinear(map.getValue()) + " = " + qv_q);
       double qv_q = tfQuery.get(map.getKey()) * map.getValue();
-      double sum = 0.0, temp = 0.0;
-      //System.out.println("Word: " + map.getKey());
-      //System.out.println("Url count: " + tfs.get("url").getOrDefault(map.getKey(), 0.0));
-      temp = urlweight * tfs.get("url").getOrDefault(map.getKey(), 0.0);
-      //System.out.println("Score: " + temp);
-      sum += temp;
-      //System.out.println("Title count: " + tfs.get("title").getOrDefault(map.getKey(), 0.0));
-      temp = titleweight * tfs.get("title").getOrDefault(map.getKey(), 0.0);
-      //System.out.println("Score: " + temp);
-      sum += temp;
-      //System.out.println("Body count: " + tfs.get("body").getOrDefault(map.getKey(), 0.0));
-      temp = bodyweight * tfs.get("body").getOrDefault(map.getKey(), 0.0);
-      //System.out.println("Score: " + temp);
-      sum += temp;
-      //System.out.println("Header count: " + tfs.get("header").getOrDefault(map.getKey(), 0.0));
-      temp = headerweight * tfs.get("header").getOrDefault(map.getKey(), 0.0);
-      //System.out.println("Score: " + temp);
-      sum += temp;
-      //System.out.println("Anchor count: " + tfs.get("anchor").getOrDefault(map.getKey(), 0.0));
-      temp = anchorweight * tfs.get("anchor").getOrDefault(map.getKey(), 0.0);
-      //System.out.println("Score: " + temp);
-      sum += temp;
+      double sum = 0.0;
+      sum += urlweight * sublinear(tfs.get("url").getOrDefault(map.getKey(), 0.0));
+      sum += titleweight * sublinear(tfs.get("title").getOrDefault(map.getKey(), 0.0));
+      sum += bodyweight * sublinear(tfs.get("body").getOrDefault(map.getKey(), 0.0));
+      sum += headerweight * sublinear(tfs.get("header").getOrDefault(map.getKey(), 0.0));
+      sum += anchorweight * sublinear(tfs.get("anchor").getOrDefault(map.getKey(), 0.0));
+//      sum += urlweight * tfs.get("url").getOrDefault(map.getKey(), 0.0);
+//      sum += titleweight * tfs.get("title").getOrDefault(map.getKey(), 0.0);
+//      sum += bodyweight * tfs.get("body").getOrDefault(map.getKey(), 0.0);
+//      sum += headerweight * tfs.get("header").getOrDefault(map.getKey(), 0.0);
+//      sum += anchorweight * tfs.get("anchor").getOrDefault(map.getKey(), 0.0);
       score += qv_q * sum;
     }
+    // For debug, delete it.
     System.out.println("***********************");
     System.out.println("Query: " + q.toString());
     System.out.println("Doc: " + d.url);
@@ -86,7 +74,7 @@ public class CosineSimilarityScorer extends AScorer {
 
   private double sublinear(double count) {
     if(count <= 0.0)  return 0.0;
-    return 1+Math.log(count);
+    return 1d+Math.log(count);
   }
   
   /**

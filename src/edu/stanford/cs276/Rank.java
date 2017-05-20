@@ -162,7 +162,7 @@ public class Rank {
     */
   public static void main(String[] args) throws IOException {
 
-    if (args.length != 4 && args.length != 8 ) {
+    if (args.length != 4 && args.length != 9 ) {
       System.err.println("Insufficient number of arguments: <sigFile> <taskOption> <idfPath> <buildFlag>");
       return;
     }
@@ -181,11 +181,12 @@ public class Rank {
        Set to "flase", load from existing idfs file.
      */
     String buildFlag = args[3];
-    if(args.length == 8) {
+    if(args.length == 9) {
       Config.urlweight = Double.parseDouble(args[4]);
       Config.titleweight = Double.parseDouble(args[5]);
       Config.headerweight = Double.parseDouble(args[6]);
       Config.anchorweight = Double.parseDouble(args[7]);
+      Config.bodyweight = Double.parseDouble(args[8]);
     }
     /* start building or loading idfs information. */
     Map<String, Double> idfs = null;

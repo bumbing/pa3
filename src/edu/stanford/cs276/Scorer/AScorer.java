@@ -25,7 +25,7 @@ public abstract class AScorer {
    */
   public AScorer(Map<String,Double> idfs) {
     this.idfs = idfs;
-    DEFAULTSMOOTHVALUE = (idfs==null) ? 1.0 : idfs.size()+1.0;
+    DEFAULTSMOOTHVALUE = (idfs==null) ? 1.0 : idfs.get("@@@");
     //DEFAULTSMOOTHVALUE = 1.0;
   }
 
@@ -61,10 +61,8 @@ public abstract class AScorer {
       // Use sublinear for termAndCount.getValue().
       // Here terms in query are all present, i.e term count >= 1, but the idf may return 0 since the collection may not
       // have the word, so smooth to 1.
-      //tfQuery.put(term, 1.0 * sublinear(termAndCount.getValue()) * idfs.getOrDefault(term, DEFAULTSMOOTHVALUE));
-      //System.out.println("sublinear(termAndCount.getValue())" + sublinear(termAndCount.getValue()));
-      //System.out.println("idfs.getOrDefault(term, DEFAULTSMOOTHVALUE)" + idfs.getOrDefault(term, DEFAULTSMOOTHVALUE));
-      tfQuery.put(term, 1.0 * termAndCount.getValue() * idfs.getOrDefault(term, DEFAULTSMOOTHVALUE));
+      tfQuery.put(term, 1.0 * sublinear(termAndCount.getValue()) * idfs.getOrDefault(term, DEFAULTSMOOTHVALUE));
+      //tfQuery.put(term, 1.0 * termAndCount.getValue() * idfs.getOrDefault(term, DEFAULTSMOOTHVALUE));
     }
 
     return tfQuery;

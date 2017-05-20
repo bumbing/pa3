@@ -1,6 +1,7 @@
 package edu.stanford.cs276;
 
 import java.util.*;
+import edu.stanford.cs276.util.*;
 
 /**
  * This class is used to store a query sequence.
@@ -17,6 +18,10 @@ public class Query {
     termCount = new HashMap<>();
     queryWords = new ArrayList<String>(Arrays.asList(query.toLowerCase().split("\\s+")));
     for(String word: queryWords) {
+      Stemmer stemmer = new Stemmer();
+      stemmer.add(word.toCharArray(), word.length());
+      stemmer.stem();
+      word = stemmer.toString();
       termCount.put(word, termCount.getOrDefault(word, 0.0)+1.0);
     }
   }

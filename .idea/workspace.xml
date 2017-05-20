@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1a6fb22-749b-4a95-a41a-87d68249be93" name="Default" comment="" />
+    <list default="true" id="a1a6fb22-749b-4a95-a41a-87d68249be93" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.result2.swp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/Document.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/Document.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/LoadHandler$1.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/LoadHandler$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/LoadHandler.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/LoadHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/Query.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/Query.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/Rank$1.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/Rank$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/Rank.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/Rank.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/Scorer/AScorer.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/Scorer/AScorer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/Scorer/CosineSimilarityScorer.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/Scorer/CosineSimilarityScorer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/edu/stanford/cs276/util/Stemmer.class" afterPath="$PROJECT_DIR$/classes/edu/stanford/cs276/util/Stemmer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idfs" afterPath="$PROJECT_DIR$/idfs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1" afterPath="$PROJECT_DIR$/1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cosinePara.txt" afterPath="$PROJECT_DIR$/cosinePara.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranked.txt" afterPath="$PROJECT_DIR$/ranked.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rankwp.sh" afterPath="$PROJECT_DIR$/rankwp.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result2" afterPath="$PROJECT_DIR$/result2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulateAneal.py" afterPath="$PROJECT_DIR$/simulateAneal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/stanford/cs276/Document.java" afterPath="$PROJECT_DIR$/src/edu/stanford/cs276/Document.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/stanford/cs276/LoadHandler.java" afterPath="$PROJECT_DIR$/src/edu/stanford/cs276/LoadHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/stanford/cs276/Query.java" afterPath="$PROJECT_DIR$/src/edu/stanford/cs276/Query.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/stanford/cs276/Rank.java" afterPath="$PROJECT_DIR$/src/edu/stanford/cs276/Rank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/AScorer.java" afterPath="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/AScorer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/CosineSimilarityScorer.java" afterPath="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/CosineSimilarityScorer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/stanford/cs276/util/Stemmer.java" afterPath="$PROJECT_DIR$/src/edu/stanford/cs276/util/Stemmer.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,61 +43,59 @@
       <file leaf-file-name="CosineSimilarityScorer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/CosineSimilarityScorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="1354">
+              <caret line="135" column="33" lean-forward="false" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flow.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flow.sh">
+      <file leaf-file-name="LoadHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/LoadHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulateAneal.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simulateAneal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+            <state relative-caret-position="1815">
+              <caret line="197" column="55" lean-forward="false" selection-start-line="197" selection-start-column="55" selection-end-line="197" selection-end-column="55" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#986#1016#0" expanded="true" />
+                <element signature="e#4800#4816#0" expanded="true" />
+                <element signature="e#4861#4877#0" expanded="true" />
+                <element signature="e#5168#5341#0" expanded="true" />
+                <element signature="e#5340#5341#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rank.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rank.sh">
+      <file leaf-file-name="AScorer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/AScorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Rank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="188" column="51" lean-forward="false" selection-start-line="188" selection-start-column="51" selection-end-line="188" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result">
+      <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Document.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result2" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result2">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="10237" column="37" lean-forward="true" selection-start-line="10237" selection-start-column="5" selection-end-line="10237" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="141" column="0" lean-forward="true" selection-start-line="135" selection-start-column="2" selection-end-line="141" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,41 +103,9 @@
       <file leaf-file-name="pa3.signal.train" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pa3-data/pa3.signal.train">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="21247" column="15" lean-forward="true" selection-start-line="21247" selection-start-column="15" selection-end-line="21247" selection-end-column="15" />
+            <state relative-caret-position="258">
+              <caret line="21247" column="15" lean-forward="false" selection-start-line="21247" selection-start-column="15" selection-end-line="21247" selection-end-column="15" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NdcgMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/NdcgMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rank.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Rank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-              <folding>
-                <element signature="e#1582#1605#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,11 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>query: sleep bag</find>
-      <find>tostring</find>
-      <find>printRankedResults</find>
-      <find>debug:</find>
-      <find>title: gear list ges7 outdoor education program oep</find>
       <find>https://stanford.edu/~dubois/deb/quilts/SidneySleepingBag.htm</find>
       <find>anchor</find>
       <find>sleep</find>
@@ -142,7 +130,6 @@
       <find>sort</find>
       <find>baseline</find>
       <find>baseline&quot;</find>
-      <find>sublinear</find>
       <find>switch</find>
       <find>system.out.print</find>
       <find>query:</find>
@@ -150,7 +137,6 @@
       <find>score</find>
       <find>args[</find>
       <find>idfs</find>
-      <find>idf</find>
       <find>Scroe</find>
       <find>system.out.println</find>
       <find>from decimal import Decimal</find>
@@ -158,7 +144,17 @@
       <find>http://cs.stanford.edu/people/czhang/</find>
       <find>chris re stanford</find>
       <find>http://nlp.stanford.edu/manning/</find>
+      <find>= 8</find>
+      <find>idf</find>
+      <find>smoothingBodyLength</find>
+      <find>getQueryFreqs</find>
+      <find>k1</find>
+      <find>body_hits</find>
+      <find>sublinear</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -170,7 +166,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/util/Document.java" />
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/ExtraCreditScorer.java" />
-        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Query.java" />
         <option value="$PROJECT_DIR$/result2.txt" />
         <option value="$PROJECT_DIR$/pa3-data/test.rel" />
         <option value="$PROJECT_DIR$/pa3-data/pa3.golden.train" />
@@ -178,21 +173,23 @@
         <option value="$PROJECT_DIR$/pa3-data/test.signal" />
         <option value="$PROJECT_DIR$/ranked.txt" />
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/BM25Scorer.java" />
-        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/util/Stemmer.java" />
-        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Document.java" />
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/SmallestWindowScorer.java" />
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/BaselineScorer.java" />
         <option value="$PROJECT_DIR$/cosinePara.sh" />
-        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/LoadHandler.java" />
         <option value="$PROJECT_DIR$/flowResult.txt" />
-        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/CosineSimilarityScorer.java" />
-        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/AScorer.java" />
         <option value="$PROJECT_DIR$/result" />
         <option value="$PROJECT_DIR$/flow.sh" />
-        <option value="$PROJECT_DIR$/simulateAneal.py" />
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Config.java" />
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/NdcgMain.java" />
         <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Rank.java" />
+        <option value="$PROJECT_DIR$/rankwp.sh" />
+        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/util/Stemmer.java" />
+        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Query.java" />
+        <option value="$PROJECT_DIR$/simulateAneal.py" />
+        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Document.java" />
+        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/CosineSimilarityScorer.java" />
+        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/LoadHandler.java" />
+        <option value="$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/AScorer.java" />
       </list>
     </option>
   </component>
@@ -208,6 +205,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1177" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -223,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -314,14 +313,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="sublinear&#9;PSI&#9;JAVA://edu.stanford.cs276.Scorer.AScorer#sublinear&#10;system.out.println&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="sublinear&#9;PSI&#9;JAVA://edu.stanford.cs276.Scorer.AScorer#sublinear&#10;sublin&#9;PSI&#9;JAVA://edu.stanford.cs276.Scorer.AScorer#sublinear&#10;system.out.println&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -944,12 +942,15 @@
       <updated>1494489777880</updated>
       <workItem from="1494489779272" duration="43028000" />
       <workItem from="1495004325235" duration="3397000" />
-      <workItem from="1495009934954" duration="2428000" />
+      <workItem from="1495009934954" duration="5639000" />
+      <workItem from="1495016331130" duration="737000" />
+      <workItem from="1495260619940" duration="32000" />
+      <workItem from="1495260718639" duration="6554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48853000" />
+    <option name="totallyTimeSpent" value="59387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1080" y="76" width="1920" height="1177" extended-state="6" />
@@ -961,29 +962,29 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295562" sideWeight="0.5021299" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1799787" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185836" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24892704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295562" sideWeight="0.4978701" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24866879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -997,7 +998,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1010,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,8 +1026,7 @@
         <state relative-caret-position="960">
           <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="e#1104#1105#0" expanded="false" />
-            <element signature="e#1165#1166#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1053,9 +1051,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="189" column="23" lean-forward="false" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,11 +1082,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1515">
           <caret line="110" column="18" lean-forward="true" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3883#3884#0" expanded="false" />
-            <element signature="e#3940#3941#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,8 +1091,8 @@
         <state relative-caret-position="225">
           <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="45" />
           <folding>
-            <element signature="e#887#888#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#928#929#0" expanded="false" />
+            <element signature="e#950#951#0" expanded="false" />
             <element signature="method#count_url#0;class#Document#0" expanded="false" />
             <element signature="method#count_title#0;class#Document#0" expanded="false" />
             <element signature="method#count_header#0;class#Document#0" expanded="false" />
@@ -1170,68 +1161,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pa3-data/test.rel">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pa3-data/test.rel" />
     <entry file="file://$PROJECT_DIR$/result1.txt" />
     <entry file="file://$PROJECT_DIR$/result2.txt" />
-    <entry file="file://$PROJECT_DIR$/pa3-data/test.golden">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa3-data/test.signal">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/util/Stemmer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="407" column="17" lean-forward="true" selection-start-line="407" selection-start-column="17" selection-end-line="407" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/SmallestWindowScorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="80" column="29" lean-forward="false" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#887#888#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-            <element signature="method#count_url#0;class#Document#0" expanded="false" />
-            <element signature="method#count_title#0;class#Document#0" expanded="false" />
-            <element signature="method#count_header#0;class#Document#0" expanded="false" />
-            <element signature="method#count_anchor#0;class#Document#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pa3-data/test.golden" />
+    <entry file="file://$PROJECT_DIR$/pa3-data/test.signal" />
     <entry file="file://$PROJECT_DIR$/cosinePara.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1243,25 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/BaselineScorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/LoadHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="163" column="28" lean-forward="false" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4598#4614#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1297,38 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/BM25Scorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2895">
-          <caret line="204" column="7" lean-forward="false" selection-start-line="204" selection-start-column="7" selection-end-line="204" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3883#3884#0" expanded="false" />
-            <element signature="e#3940#3941#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/AScorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="e#1104#1105#0" expanded="false" />
-            <element signature="e#1165#1166#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rankwp.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,33 +1219,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="10237" column="37" lean-forward="true" selection-start-line="10237" selection-start-column="5" selection-end-line="10237" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa3-data/pa3.signal.train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="21247" column="15" lean-forward="true" selection-start-line="21247" selection-start-column="15" selection-end-line="21247" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulateAneal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-142">
+          <caret line="10206" column="5" lean-forward="true" selection-start-line="10206" selection-start-column="5" selection-end-line="10206" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1370,6 +1233,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1382,36 +1252,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/CosineSimilarityScorer.java">
+    <entry file="file://$PROJECT_DIR$/rankwp.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+        <state relative-caret-position="30">
+          <caret line="2" column="77" lean-forward="false" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulateAneal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Rank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="188" column="51" lean-forward="false" selection-start-line="188" selection-start-column="51" selection-end-line="188" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/NdcgMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="540">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Rank.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/util/Stemmer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        <state relative-caret-position="690">
+          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa3-data/pa3.signal.train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="21247" column="15" lean-forward="false" selection-start-line="21247" selection-start-column="15" selection-end-line="21247" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="135" selection-start-column="2" selection-end-line="141" selection-end-column="0" />
           <folding>
-            <element signature="e#1582#1605#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/BaselineScorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/BM25Scorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="119" column="3" lean-forward="true" selection-start-line="119" selection-start-column="3" selection-end-line="119" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/SmallestWindowScorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/LoadHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="197" column="55" lean-forward="false" selection-start-line="197" selection-start-column="55" selection-end-line="197" selection-end-column="55" />
+          <folding>
+            <element signature="e#986#1016#0" expanded="true" />
+            <element signature="e#4800#4816#0" expanded="true" />
+            <element signature="e#4861#4877#0" expanded="true" />
+            <element signature="e#5168#5341#0" expanded="true" />
+            <element signature="e#5340#5341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/CosineSimilarityScorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1354">
+          <caret line="135" column="33" lean-forward="false" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/stanford/cs276/Scorer/AScorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
