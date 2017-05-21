@@ -13,9 +13,9 @@ query: 24 hours library
     title: revs digital library 24 hours of le mans
   url: https://revslib.stanford.edu/item/tn092ms8550
     title: revs digital library spa 24 hours
-  url: https://revslib.stanford.edu/item/vf058dz9258
-    title: revs digital library 24 hours of le mans
   url: https://revslib.stanford.edu/catalog/qg034xj9358
+    title: revs digital library 24 hours of le mans
+  url: https://revslib.stanford.edu/item/vf058dz9258
     title: revs digital library 24 hours of le mans
   url: https://revslib.stanford.edu/catalog/jh613rk7374
     title: revs digital library 24 hours of le mans
@@ -41,10 +41,10 @@ query: 24 hours library
   url: https://revslib.stanford.edu/item/tn092ms8550
     title: revs digital library spa 24 hours
     debug: Pagerank: 0
-  url: https://revslib.stanford.edu/item/vf058dz9258
+  url: https://revslib.stanford.edu/catalog/qg034xj9358
     title: revs digital library 24 hours of le mans
     debug: Pagerank: 0
-  url: https://revslib.stanford.edu/catalog/qg034xj9358
+  url: https://revslib.stanford.edu/item/vf058dz9258
     title: revs digital library 24 hours of le mans
     debug: Pagerank: 0
   url: https://revslib.stanford.edu/catalog/jh613rk7374

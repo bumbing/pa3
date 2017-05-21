@@ -1,0 +1,196 @@
+query: 24 hours library
+  url: http://library.stanford.edu/
+    title: stanford university libraries
+    header: library hours
+    header: stanford library publication system
+    body_hits: hours 63 139 480 660
+    body_hits: library 353 359 366 372 376 380 391 399 415 419 423 429 435 444 451 462 468 475 496 606 637
+    body_length: 693
+    pagerank: 7
+    anchor_text: stanford university library
+      stanford_anchor_count: 92
+    anchor_text: http library stanford edu
+      stanford_anchor_count: 25
+    anchor_text: library website
+      stanford_anchor_count: 1
+    anchor_text: su library sul
+      stanford_anchor_count: 19
+    anchor_text: stanford library
+      stanford_anchor_count: 7
+    anchor_text: library
+      stanford_anchor_count: 7
+    anchor_text: library stanford edu
+      stanford_anchor_count: 29
+    anchor_text: cecil h green library
+      stanford_anchor_count: 1
+    anchor_text: green library
+      stanford_anchor_count: 2
+    anchor_text: library system website
+      stanford_anchor_count: 1
+    anchor_text: library resources
+      stanford_anchor_count: 1
+    anchor_text: stanford university library homepage
+      stanford_anchor_count: 110
+    anchor_text: library services
+      stanford_anchor_count: 1
+    anchor_text: stanford library facilities
+      stanford_anchor_count: 1
+    anchor_text: library system
+      stanford_anchor_count: 1
+    anchor_text: stanford library system
+      stanford_anchor_count: 4
+    anchor_text: library homepage
+      stanford_anchor_count: 1
+    anchor_text: library and academic resources
+      stanford_anchor_count: 1
+  url: http://library.stanford.edu/hours
+    title: library hours
+    header: library hours
+    header: cecil h green library
+    header: art & architecture library
+    header: business library
+    header: classics library
+    header: earth sciences library & map collections branner
+    header: east asia library
+    header: education library cubberley
+    header: engineering library terman
+    header: hoover institution library
+    header: lathrop library
+    header: law library robert crown
+    header: marine biology library harold a miller at hopkins marine station
+    header: medical library lane
+    header: music library
+    header: slac national accelerator lab research library
+    header: science library li and ma
+    header: stanford auxiliary library 1&2 sal1&2
+    header: stanford auxiliary library 3 sal3
+    header: stanford auxiliary library off campus newark
+    header: tanner philosophy library
+    body_hits: library 11 49 215 342 402 433 493 538 583 627 697 803 850 880 912 957 987 1071 1157
+    body_hits: hours 12 50 1180
+    body_hits: 24 129 727
+    body_length: 1213
+    pagerank: 6
+    anchor_text: see all hours
+      stanford_anchor_count: 2
+    anchor_text: hours & locations
+      stanford_anchor_count: 226
+    anchor_text: hours
+      stanford_anchor_count: 220
+    anchor_text: library hours
+      stanford_anchor_count: 200
+    anchor_text: hours for all stanford university libraries
+      stanford_anchor_count: 4
+    anchor_text: http library stanford edu libraries_collections hours_locations html
+      stanford_anchor_count: 12
+    anchor_text: hours and locations
+      stanford_anchor_count: 1
+    anchor_text: learn more about hours & locations
+      stanford_anchor_count: 1
+    anchor_text: the stanford libraries will have intersession hours march 25 april 1 check for details
+      stanford_anchor_count: 1
+    anchor_text: http library stanford edu hours
+      stanford_anchor_count: 15
+    anchor_text: whenever green library is open
+      stanford_anchor_count: 5
+    anchor_text: this week's hours
+      stanford_anchor_count: 2
+    anchor_text: stanford's green library
+      stanford_anchor_count: 2
+    anchor_text: hours and locations webpage
+      stanford_anchor_count: 2
+    anchor_text: earth sciences branner library hours
+      stanford_anchor_count: 1
+    anchor_text: libraries hours page
+      stanford_anchor_count: 3
+    anchor_text: stanford libraries hours page
+      stanford_anchor_count: 8
+    anchor_text: library's open hours
+      stanford_anchor_count: 4
+    anchor_text: library hours page
+      stanford_anchor_count: 1
+    anchor_text: hours web page
+      stanford_anchor_count: 1
+    anchor_text: green library's hours
+      stanford_anchor_count: 1
+  url: https://library.stanford.edu/libraries/lathrop/24-hour-study-room
+    title: 24 hour study room stanford university libraries
+    header: 24 hour study room
+    body_hits: hours 64 140 260
+    body_hits: 24 209 218
+    body_hits: library 214
+    body_length: 293
+    pagerank: 6
+    anchor_text: 24 hour study room
+      stanford_anchor_count: 30
+  url: https://library.stanford.edu/using-library/24-hour-access
+    title: after hour access stanford university libraries
+    header: robin li and melissa ma science library
+    body_hits: hours 64 140 217 242 454 660 760
+    body_hits: library 220 225 238 241 324 407 434 444 459 503 515 561 578 587 607 619 625 649 674 699 709
+    body_length: 793
+    pagerank: 5
+    anchor_text: after hours access
+      stanford_anchor_count: 2
+    anchor_text: 24 hour access
+      stanford_anchor_count: 18
+  url: https://revslib.stanford.edu/catalog/jh613rk7374
+    title: revs digital library 24 hours of le mans
+    header: 24 hours of le mans
+    body_hits: library 79 123 142
+    body_hits: 24 248
+    body_hits: hours 249
+    body_length: 532
+    pagerank: 0
+    anchor_text: 24 hours of le mans
+      stanford_anchor_count: 179
+  url: https://revslib.stanford.edu/catalog/qg034xj9358
+    title: revs digital library 24 hours of le mans
+    header: 24 hours of le mans
+    body_hits: library 79 123 142
+    body_hits: 24 218
+    body_hits: hours 219
+    body_length: 456
+    pagerank: 0
+    anchor_text: 24 hours of le mans
+      stanford_anchor_count: 49
+  url: https://revslib.stanford.edu/catalog/sg340fj5775
+    title: revs digital library 24 hours of le mans
+    header: 24 hours of le mans
+    body_hits: library 79 123 142
+    body_hits: 24 267 500
+    body_hits: hours 268
+    body_length: 569
+    pagerank: 1
+    anchor_text: 24 hours of le mans
+      stanford_anchor_count: 163
+  url: https://revslib.stanford.edu/item/sj252rw8897
+    title: revs digital library 24 hours of le mans
+    header: 24 hours of le mans
+    body_hits: library 79 123 142
+    body_hits: 24 268
+    body_hits: hours 269
+    body_length: 505
+    pagerank: 1
+    anchor_text: 24 hours of le mans
+      stanford_anchor_count: 162
+  url: https://revslib.stanford.edu/item/tn092ms8550
+    title: revs digital library spa 24 hours
+    header: spa 24 hours
+    body_hits: library 79 123 142
+    body_hits: 24 223 437
+    body_hits: hours 224
+    body_length: 463
+    pagerank: 0
+    anchor_text: spa 24 hours
+      stanford_anchor_count: 58
+  url: https://revslib.stanford.edu/item/vf058dz9258
+    title: revs digital library 24 hours of le mans
+    header: 24 hours of le mans
+    body_hits: library 79 123 142
+    body_hits: 24 198 231 384
+    body_hits: hours 232
+    body_length: 468
+    pagerank: 0
+    anchor_text: 24 hours of le mans
+      stanford_anchor_count: 82

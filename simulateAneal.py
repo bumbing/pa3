@@ -16,20 +16,20 @@ def rundev(a,b,c,d,e):
 	score = os.popen(text2).read().rstrip()
 	return score
 
-a = random.random() * 40 + 435
-b = random.random() * 40 + 470
-c = random.random() * 40 + 200
-d = random.random() * 40 + 330
-e = random.random() * 10
+a = random.random() * 100 + 400
+b = random.random() * 100
+c = random.random() * 200 + 400
+d = random.random() * 50
+e = random.random() * 20
 score = run(a,b,c,d,e)
 T = 10000
 
 while (T>0):
-	a_ = random.random() * 40 + 435
-	b_ = random.random() * 40 + 470
-	c_ = random.random() * 40 + 200
-	d_ = random.random() * 40 + 330
-	e_ = random.random() * 10
+	a_ = random.random() * 100 + 400
+	b_ = random.random() * 100
+	c_ = random.random() * 200 + 400
+	d_ = random.random() * 50
+	e_ = random.random() * 20
 	dis = run(a_,b_,c_,d_,e_)
 	if(dis>score):
 		a,b,c,d,e = a_,b_,c_,d_,e_

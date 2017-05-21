@@ -70,9 +70,9 @@ public class Rank {
            * urls for a query based on scores.
            */
           if (o1.getSecond() - o2.getSecond() > 0) {
-            return 1;
-          } else if (o1.getSecond() - o2.getSecond() < 0)  {
             return -1;
+          } else if (o1.getSecond() - o2.getSecond() < 0)  {
+            return 1;
           } else {
             return 0;
           }
@@ -162,7 +162,7 @@ public class Rank {
     */
   public static void main(String[] args) throws IOException {
 
-    if (args.length != 4 && args.length != 9 ) {
+    if (args.length != 4 && args.length != 9 && args.length != 11 && args.length != 14) {
       System.err.println("Insufficient number of arguments: <sigFile> <taskOption> <idfPath> <buildFlag>");
       return;
     }
@@ -187,6 +187,25 @@ public class Rank {
       Config.headerweight = Double.parseDouble(args[6]);
       Config.anchorweight = Double.parseDouble(args[7]);
       Config.bodyweight = Double.parseDouble(args[8]);
+    }else if (args.length == 11) {
+      Config.urlweight = Double.parseDouble(args[4]);
+      Config.titleweight = Double.parseDouble(args[5]);
+      Config.headerweight = Double.parseDouble(args[6]);
+      Config.anchorweight = Double.parseDouble(args[7]);
+      Config.bodyweight = Double.parseDouble(args[8]);
+      Config.k1 = Double.parseDouble(args[9]);
+      Config.pageRankLambda = Double.parseDouble(args[10]);
+    }else if (args.length == 14) {
+      Config.urlweight = Double.parseDouble(args[4]);
+      Config.titleweight = Double.parseDouble(args[5]);
+      Config.headerweight = Double.parseDouble(args[6]);
+      Config.anchorweight = Double.parseDouble(args[7]);
+      Config.bodyweight = Double.parseDouble(args[8]);
+      Config.burl = Double.parseDouble(args[9]);
+      Config.btitle = Double.parseDouble(args[10]);
+      Config.bheader = Double.parseDouble(args[11]);
+      Config.bbody = Double.parseDouble(args[12]);
+      Config.banchor = Double.parseDouble(args[13]);
     }
     /* start building or loading idfs information. */
     Map<String, Double> idfs = null;

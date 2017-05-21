@@ -13,12 +13,12 @@ import java.util.Map;
  * have to use Task 2. (You could also use Task 1, in which case, you'd probably like to extend CosineSimilarityScorer instead.)
  * Also, feel free to modify or add helpers inside this class.
  */
-public class SmallestWindowScorer extends BM25Scorer {
+public class SmallestWindowScorer extends CosineSimilarityScorer {
 
   private double lambda = 2.65;
   
   public SmallestWindowScorer(Map<String, Double> idfs, Map<Query,Map<String, Document>> queryDict) {
-    super(idfs, queryDict);
+    super(idfs);
   }
 
   /**

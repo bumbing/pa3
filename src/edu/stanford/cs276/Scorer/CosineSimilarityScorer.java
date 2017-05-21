@@ -62,26 +62,34 @@ public class CosineSimilarityScorer extends AScorer {
     for(Map.Entry<String, Double> map: rare_word_top.entrySet()) {
       if(count>=4)  break;
       double qv_q = sublinear(termInQuery.get(map.getKey())) * map.getValue();
+      //System.out.println("qv_q: " + qv_q);
       double sum = 0.0;
-      sum += urlweight * sublinear(tfs.get("url").getOrDefault(map.getKey(), 0.0));
-      sum += titleweight * sublinear(tfs.get("title").getOrDefault(map.getKey(), 0.0));
-      sum += bodyweight * sublinear(tfs.get("body").getOrDefault(map.getKey(), 0.0));
-      sum += headerweight * sublinear(tfs.get("header").getOrDefault(map.getKey(), 0.0));
-      sum += anchorweight * sublinear(tfs.get("anchor").getOrDefault(map.getKey(), 0.0));
-//      sum += urlweight * tfs.get("url").getOrDefault(map.getKey(), 0.0);
-//      sum += titleweight * tfs.get("title").getOrDefault(map.getKey(), 0.0);
-//      sum += bodyweight * tfs.get("body").getOrDefault(map.getKey(), 0.0);
-//      sum += headerweight * tfs.get("header").getOrDefault(map.getKey(), 0.0);
-//      sum += anchorweight * tfs.get("anchor").getOrDefault(map.getKey(), 0.0);
+//      System.out.println("url tf: " + sublinear(tfs.get("url").getOrDefault(map.getKey(), 0.0)));
+//      System.out.println("title tf: " + sublinear(tfs.get("title").getOrDefault(map.getKey(), 0.0)));
+//      System.out.println("body tf: " + sublinear(tfs.get("body").getOrDefault(map.getKey(), 0.0)));
+//      System.out.println("header tf: " + sublinear(tfs.get("header").getOrDefault(map.getKey(), 0.0)));
+//      System.out.println("anchor tf: " + sublinear(tfs.get("anchor").getOrDefault(map.getKey(), 0.0)));
+
+//      sum += urlweight * sublinear(tfs.get("url").getOrDefault(map.getKey(), 0.0));
+//      sum += titleweight * sublinear(tfs.get("title").getOrDefault(map.getKey(), 0.0));
+//      sum += bodyweight * sublinear(tfs.get("body").getOrDefault(map.getKey(), 0.0));
+//      sum += headerweight * sublinear(tfs.get("header").getOrDefault(map.getKey(), 0.0));
+//      sum += anchorweight * sublinear(tfs.get("anchor").getOrDefault(map.getKey(), 0.0));
+      sum += urlweight * tfs.get("url").getOrDefault(map.getKey(), 0.0);
+      sum += titleweight * tfs.get("title").getOrDefault(map.getKey(), 0.0);
+      sum += bodyweight * tfs.get("body").getOrDefault(map.getKey(), 0.0);
+      sum += headerweight * tfs.get("header").getOrDefault(map.getKey(), 0.0);
+      sum += anchorweight * tfs.get("anchor").getOrDefault(map.getKey(), 0.0);
+      System.out.println("sum:" + sum);
       score += qv_q * sum;
       count ++;
     }
     // For debug, delete it.
-    System.out.println("***********************");
-    System.out.println("Query: " + q.toString());
-    System.out.println("Doc: " + d.url);
-    System.out.println("Scroe: " + score);
-    System.out.println("***********************");
+//    System.out.println("***********************");
+//    System.out.println("Query: " + q.toString());
+//    System.out.println("Doc: " + d.url);
+//    System.out.println("Scroe: " + score);
+//    System.out.println("***********************");
     return score;
   }
 

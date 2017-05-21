@@ -1,5 +1,6 @@
 package edu.stanford.cs276.Scorer;
 
+import edu.stanford.cs276.Config;
 import edu.stanford.cs276.Document;
 import edu.stanford.cs276.Query;
 
@@ -8,8 +9,10 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Skeleton code for the implementation of a BM25 Scorer in Task 2.
@@ -19,22 +22,22 @@ public class BM25Scorer extends AScorer {
   /*
    *  TODO: You will want to tune these values
    */
-  double urlweight = 440.98;
-  double titleweight  = 492.92;
-  double bodyweight = 229.07;
-  double headerweight = 369.79;
-  double anchorweight = 2.2789;
+  double urlweight = Config.urlweight;
+  double titleweight  = Config.titleweight;
+  double bodyweight = Config.bodyweight;
+  double headerweight = Config.headerweight;
+  double anchorweight = Config.anchorweight;
   
   // BM25-specific weights
-  double burl = 0.8;
-  double btitle = 0.5;
-  double bheader = 0.6;
-  double bbody = 0.8;
-  double banchor = 0.9;
+  double burl = Config.burl;
+  double btitle = Config.btitle;
+  double bheader = Config.bheader;
+  double bbody = Config.bbody;
+  double banchor = Config.banchor;
   
-  double k1 = 25;
-  double pageRankLambda = 1.1;
-  double pageRankLambdaPrime = 1;
+  double k1 = Config.k1;
+  double pageRankLambda = Config.pageRankLambda;
+  double pageRankLambdaPrime = Config.pageRankLambdaPrime;
   
   // query -> url -> document
   Map<Query,Map<String, Document>> queryDict;
@@ -47,7 +50,7 @@ public class BM25Scorer extends AScorer {
   Map<String,Double> avgLengths;    
 
   // Document -> pagerank score
-  Map<Document,Double> pagerankScores; 
+  Map<Document,Double> pagerankScores;
   
     /**
      * Construct a BM25Scorer.
@@ -58,6 +61,7 @@ public class BM25Scorer extends AScorer {
       super(idfs);
       this.queryDict = queryDict;
       this.calcAverageLengths();
+      //System.out.print("DEFAULTSMOOTHVALUE" + DEFAULTSMOOTHVALUE);
     }
 
     /**
@@ -92,6 +96,7 @@ public class BM25Scorer extends AScorer {
         }
       }
       double res = (count == 0.0) ? 0.0 : sum/count;
+      //System.out.println("Type: " + tfType + "; average length: " + res);
       avgLengths.put(tfType, res);
     }
 
@@ -108,19 +113,41 @@ public class BM25Scorer extends AScorer {
   public double getNetScore(Map<String,Map<String, Double>> tfs, Query q, Map<String,Double> tfQuery,Document d) {
 
     double score = 0.0;
-    for(Map.Entry<String, Double> map: q.termCount().entrySet()) {
+    Map<String, Double> termInQuery = q.termCount();
+    HashMap<String, Double> idf = new HashMap<>();
+
+    for(Map.Entry<String, Double> map: termInQuery.entrySet()) {
+      idf.put(map.getKey(), tfQuery.get(map.getKey()));
+    }
+    Comparator<String> comparator = new ValueComparator<>(idf);
+    TreeMap<String, Double> rare_word_top = new TreeMap<>(comparator);
+    rare_word_top.putAll(idf);
+
+    int count = 0;
+    for(Map.Entry<String, Double> map: rare_word_top.entrySet()) {
+      if(count>=4)  break;
+
+
       String word = map.getKey();
       Double w_dt = getWdt(d, word, tfs);
-      Double tfidf = tfQuery.getOrDefault(word, 0.0);
-      score += w_dt * tfidf / (k1+w_dt);
+      Double idfs = tfQuery.getOrDefault(word, DEFAULTSMOOTHVALUE);
+      score += w_dt *  sublinear(termInQuery.get(map.getKey())) * map.getValue() / (k1+w_dt);
+      //score += w_dt * tf * sublinear(map.getValue()) / (k1+w_dt);
+      count++;
     }
+    //System.out.println(" Doc: " + d.toString());
+    //System.out.println("BM25 Score: " + score);
     score += pageRankLambda * PageRankFunction((double)d.page_rank);
-
+    Double pagerank = pageRankLambda * PageRankFunction((double)d.page_rank);
+    //System.out.println("Pagerank: " + d.page_rank);
+    //System.out.println("Pagerank score: " + pagerank);
+    //System.out.println("Total: " + score);
+    //.out.println("**************");
     return score;
   }
 
   private double getWdt(Document d, String word, Map<String,Map<String, Double>> tfs) {
-    double score = 0.0;
+    double score = 0.0, temp;
     score += urlweight * tfs.get("url").getOrDefault(word, 0d);
     score += titleweight * tfs.get("title").getOrDefault(word, 0d);
     score += headerweight * tfs.get("header").getOrDefault(word, 0d);
@@ -140,11 +167,6 @@ public class BM25Scorer extends AScorer {
    * @param q the Query
    */
   public void normalizeTFs(Map<String,Map<String, Double>> tfs,Document d, Query q) {
-  /*
-   * TODO : Your code here
-   * Use equation 3 in the writeup to normalize the raw term frequencies
-   * in fields in document d.
-   */
     for(Map.Entry<String, Map<String, Double>> docComponents: tfs.entrySet()) {
       String type_name = docComponents.getKey();
       Double temp = 1d;
@@ -159,7 +181,7 @@ public class BM25Scorer extends AScorer {
           temp += bheader * (d.header_length()/avgLengths.get(type_name) - 1);
           break;
         case "body":
-          temp += bbody * (d.body_length/avgLengths.get(type_name) - 1);
+          temp += bbody * ((double)d.body_length/avgLengths.get(type_name) - 1);
           break;
         case "anchor":
           temp += banchor * (d.anchor_length()/avgLengths.get(type_name) - 1);
@@ -168,6 +190,7 @@ public class BM25Scorer extends AScorer {
       for(Map.Entry<String, Double> termCount: docComponents.getValue().entrySet()) {
         String st = termCount.getKey();
         Double tf = termCount.getValue();
+        //Double tf = sublinear(termCount.getValue());
         tf /= temp;
         docComponents.getValue().put(st, tf);
       }
