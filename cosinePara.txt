@@ -1,6 +1,6 @@
-urlweight 468.642996465
-titleweight 473.593651535
-bodyweight 2.37073484215
-headerweight 204.465075331
-anchorweight 366.805971612
+urlweight 468.0
+titleweight 473.0
+bodyweight 2.37
+headerweight 204.0
+anchorweight 366.0
 smoothingBodyLength 500.0

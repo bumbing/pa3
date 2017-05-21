@@ -61,7 +61,7 @@ public class CosineSimilarityScorer extends AScorer {
     int count = 0;
     for(Map.Entry<String, Double> map: rare_word_top.entrySet()) {
       if(count>=4)  break;
-      double qv_q = termInQuery.get(map.getKey()) * map.getValue();
+      double qv_q = sublinear(termInQuery.get(map.getKey())) * map.getValue();
       double sum = 0.0;
       sum += urlweight * sublinear(tfs.get("url").getOrDefault(map.getKey(), 0.0));
       sum += titleweight * sublinear(tfs.get("title").getOrDefault(map.getKey(), 0.0));

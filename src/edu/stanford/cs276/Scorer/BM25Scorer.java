@@ -110,10 +110,9 @@ public class BM25Scorer extends AScorer {
     double score = 0.0;
     for(Map.Entry<String, Double> map: q.termCount().entrySet()) {
       String word = map.getKey();
-      Double tf = sublinear(map.getValue());
       Double w_dt = getWdt(d, word, tfs);
-      Double idf = idfs.getOrDefault(word, 0.0);
-      score += w_dt * tf * idf / (k1+w_dt);
+      Double tfidf = tfQuery.getOrDefault(word, 0.0);
+      score += w_dt * tfidf / (k1+w_dt);
     }
     score += pageRankLambda * PageRankFunction((double)d.page_rank);
 
@@ -148,27 +147,27 @@ public class BM25Scorer extends AScorer {
    */
     for(Map.Entry<String, Map<String, Double>> docComponents: tfs.entrySet()) {
       String type_name = docComponents.getKey();
+      Double temp = 1d;
+      switch(type_name) {
+        case "url":
+          temp += burl * (d.url_length()/avgLengths.get(type_name) - 1);
+          break;
+        case "title":
+          temp += btitle * (d.title_length()/avgLengths.get(type_name) - 1);
+          break;
+        case "header":
+          temp += bheader * (d.header_length()/avgLengths.get(type_name) - 1);
+          break;
+        case "body":
+          temp += bbody * (d.body_length/avgLengths.get(type_name) - 1);
+          break;
+        case "anchor":
+          temp += banchor * (d.anchor_length()/avgLengths.get(type_name) - 1);
+          break;
+      }
       for(Map.Entry<String, Double> termCount: docComponents.getValue().entrySet()) {
         String st = termCount.getKey();
         Double tf = termCount.getValue();
-        Double temp = 1d;
-        switch(type_name) {
-          case "url":
-            temp += burl * (d.url_length()/avgLengths.get(type_name) - 1);
-            break;
-          case "title":
-            temp += btitle * (d.title_length()/avgLengths.get(type_name) - 1);
-            break;
-          case "header":
-            temp += bheader * (d.title_length()/avgLengths.get(type_name) - 1);
-            break;
-          case "body":
-            temp += bbody * (d.body_length/avgLengths.get(type_name) - 1);
-            break;
-          case "anchor":
-            temp += banchor * (d.anchor_length()/avgLengths.get(type_name) - 1);
-            break;
-        }
         tf /= temp;
         docComponents.getValue().put(st, tf);
       }

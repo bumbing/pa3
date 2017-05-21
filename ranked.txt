@@ -4797,12 +4797,12 @@ query: public film scanner
     title: stanford university libraries
     debug: Pagerank: 7
 query: ai track graduate degree program 
-  url: http://exploredegrees.stanford.edu/schoolofengineering/computerscience/
-    title: computer science stanford university
-    debug: Pagerank: 5
   url: http://cs.stanford.edu/degrees/ug/Tracks.shtml
     title: choosing a track
     debug: Pagerank: 4
+  url: http://exploredegrees.stanford.edu/schoolofengineering/computerscience/
+    title: computer science stanford university
+    debug: Pagerank: 5
   url: https://cs.stanford.edu/degrees/mscs/specializations/
     title: stanford computer science
     debug: Pagerank: 4
