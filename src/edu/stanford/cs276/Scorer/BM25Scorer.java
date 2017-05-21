@@ -19,11 +19,11 @@ public class BM25Scorer extends AScorer {
   /*
    *  TODO: You will want to tune these values
    */
-  double urlweight = 15;
-  double titleweight  = 1;
-  double bodyweight = 0.9;
-  double headerweight = 1.1;
-  double anchorweight = 1;
+  double urlweight = 440.98;
+  double titleweight  = 492.92;
+  double bodyweight = 229.07;
+  double headerweight = 369.79;
+  double anchorweight = 2.2789;
   
   // BM25-specific weights
   double burl = 0.8;
@@ -78,6 +78,7 @@ public class BM25Scorer extends AScorer {
         temp.put("header", doc.header_length());
         temp.put("body", (double)doc.body_length);
         temp.put("anchor", doc.anchor_length());
+        lengths.put(doc, temp);
         pagerankScores.put(doc, (double)doc.page_rank);
       }
     }
@@ -109,10 +110,10 @@ public class BM25Scorer extends AScorer {
     double score = 0.0;
     for(Map.Entry<String, Double> map: q.termCount().entrySet()) {
       String word = map.getKey();
-      Double tf = map.getValue();
+      Double tf = sublinear(map.getValue());
       Double w_dt = getWdt(d, word, tfs);
       Double idf = idfs.getOrDefault(word, 0.0);
-      score += w_dt * idf / (k1+w_dt);
+      score += w_dt * tf * idf / (k1+w_dt);
     }
     score += pageRankLambda * PageRankFunction((double)d.page_rank);
 

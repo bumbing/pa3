@@ -8,8 +8,10 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Skeleton code for the implementation of a 
@@ -47,9 +49,19 @@ public class CosineSimilarityScorer extends AScorer {
   public double getNetScore(Map<String, Map<String, Double>> tfs, Query q, Map<String,Double> tfQuery, Document d) {
     double score = 0.0;
     Map<String, Double> termInQuery = q.termCount();
+    HashMap<String, Double> idf = new HashMap<>();
 
     for(Map.Entry<String, Double> map: termInQuery.entrySet()) {
-      double qv_q = tfQuery.get(map.getKey()) * map.getValue();
+      idf.put(map.getKey(), tfQuery.get(map.getKey()));
+    }
+    Comparator<String> comparator = new ValueComparator<>(idf);
+    TreeMap<String, Double> rare_word_top = new TreeMap<>(comparator);
+    rare_word_top.putAll(idf);
+
+    int count = 0;
+    for(Map.Entry<String, Double> map: rare_word_top.entrySet()) {
+      if(count>=4)  break;
+      double qv_q = termInQuery.get(map.getKey()) * map.getValue();
       double sum = 0.0;
       sum += urlweight * sublinear(tfs.get("url").getOrDefault(map.getKey(), 0.0));
       sum += titleweight * sublinear(tfs.get("title").getOrDefault(map.getKey(), 0.0));
@@ -62,6 +74,7 @@ public class CosineSimilarityScorer extends AScorer {
 //      sum += headerweight * tfs.get("header").getOrDefault(map.getKey(), 0.0);
 //      sum += anchorweight * tfs.get("anchor").getOrDefault(map.getKey(), 0.0);
       score += qv_q * sum;
+      count ++;
     }
     // For debug, delete it.
     System.out.println("***********************");
@@ -72,11 +85,6 @@ public class CosineSimilarityScorer extends AScorer {
     return score;
   }
 
-  private double sublinear(double count) {
-    if(count <= 0.0)  return 0.0;
-    return 1d+Math.log(count);
-  }
-  
   /**
    * Normalize the term frequencies. 
    * @param tfs the term frequencies

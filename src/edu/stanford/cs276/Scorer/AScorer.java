@@ -68,12 +68,12 @@ public abstract class AScorer {
     return tfQuery;
   }
 
-  private double sublinear(double count) {
+  public static double sublinear(double count) {
     if(count < 0.0){
       System.out.println("The count is smaller than 0.");
     }
     if(count == 0.0)  return 0.0;
-    else return 1+Math.log(count);
+    else return 1d + Math.log(count);
   }
 
   /*

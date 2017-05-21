@@ -1,8 +1,8 @@
-urlweight 15.0
-titleweight 1.0
-bodyweight 0.9
-headerweight 1.1
-anchorweight 1.0
+urlweight 440.98
+titleweight 492.92
+bodyweight 229.07
+headerweight 369.79
+anchorweight 2.2789
 burl 0.8
 btitle 0.5
 bheader 0.6

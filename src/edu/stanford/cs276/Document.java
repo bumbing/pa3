@@ -60,6 +60,7 @@ public class Document {
     double result = 0.0;
     for(Map.Entry<String, Integer> map: anchors.entrySet()) {
       double temp = map.getKey().split("\\s+").length * map.getValue();
+      result += temp;
     }
     return result;
   }
